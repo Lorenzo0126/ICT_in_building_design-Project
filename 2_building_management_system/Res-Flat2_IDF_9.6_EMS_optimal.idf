@@ -6046,6 +6046,36 @@ ExternalInterface:FunctionalMockupUnitExport:From:Variable,
     Zone Mean Air Temperature,    !- OutputVariable Name
     Tin_Zone4;             !- FMU Variable Name
 
+ExternalInterface:FunctionalMockupUnitExport:From:Variable,
+    EMS,                                     !- OutputVariable Index Key Name
+    Erl Shading Control Status Zone1_wall2,  !- OutputVariable Name
+    ShadeStatus_Zone1_Wall2;                 !- FMU Variable Name
+
+ExternalInterface:FunctionalMockupUnitExport:From:Variable,
+    EMS,                                     !- OutputVariable Index Key Name
+    Erl Shading Control Status Zone1_wall8,  !- OutputVariable Name
+    ShadeStatus_Zone1_Wall8;                 !- FMU Variable Name
+
+ExternalInterface:FunctionalMockupUnitExport:From:Variable,
+    EMS,                                     !- OutputVariable Index Key Name
+    Erl Shading Control Status Zone1_wall9,  !- OutputVariable Name
+    ShadeStatus_Zone1_Wall9;                 !- FMU Variable Name
+
+ExternalInterface:FunctionalMockupUnitExport:From:Variable,
+    EMS,                                     !- OutputVariable Index Key Name
+    Erl Shading Control Status Zone2_wall2,  !- OutputVariable Name
+    ShadeStatus_Zone2_Wall2;                 !- FMU Variable Name
+
+ExternalInterface:FunctionalMockupUnitExport:From:Variable,
+    EMS,                                     !- OutputVariable Index Key Name
+    Erl Shading Control Status Zone2_wall3,  !- OutputVariable Name
+    ShadeStatus_Zone2_wall3;                 !- FMU Variable Name
+
+ExternalInterface:FunctionalMockupUnitExport:From:Variable,
+    EMS,                                     !- OutputVariable Index Key Name
+    Erl Shading Control Status Zone4_wall2,  !- OutputVariable Name
+    ShadeStatus_Zone4_Wall2;                 !- FMU Variable Name
+
 !-   ===========  ALL OBJECTS IN CLASS: WATERUSE:EQUIPMENT ===========
 
 ! DHW 1

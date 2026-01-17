@@ -1,0 +1,27 @@
+# Temperature
+
+SELECT last("value")
+FROM "simulation_observations"
+WHERE $timeFilter AND "name" =~ /^(Tair_z[1-4]|T_ext)$/
+GROUP BY time($__interval), "name" fill(previous)
+
+# Shading
+
+SELECT last("value") 
+FROM "simulation_observations" 
+WHERE $timeFilter AND "name" =~ /^ShadeStatus_Zone(1_Wall[289]|2_Wall2|2_wall3|4_Wall2)$/
+GROUP BY time($__interval), "name" fill(previous)
+
+# Electricity
+
+SELECT last("value") 
+FROM "simulation_observations" 
+WHERE $timeFilter AND "name" =~ /^(DistrictHeating|DistrictCooling|Electricity)$/
+GROUP BY time($__interval), "name" fill(previous)
+
+# DNI
+
+SELECT last("value") 
+FROM "simulation_observations" 
+WHERE $timeFilter AND "name" =~ /^(DNI)$/
+GROUP BY time($__interval), "name" fill(previous)
